@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  
+  <body>
+    <header class="main-header">
+      <nav class="main-nav nav">
+        <ul>
+          <li><a  href="login.html">LOGOUT</a></li>
+          <li><a href="Urunler.html">URUNLER</a></li>
+          <!-- <li><a href="about.html">ABOUT</a></li> -->
+        </ul>
+      </nav>
+      <h1 class="band-name band-name-large">BLOCK CHAİN</h1>
+    </header>
+    <input type="text" id="Urunismi" placeholder="UrunAdi">
+    <input type="text" id="UrunFiyati" placeholder="UrunFiyati">
+    <button type="button" id="UrunEkle">EKLE</button> 
+    <input id="DosyaSec" type="file" onchange="dosyaOnizle()"><br>
+     <!-- <img src="" height="200" width="200" alt="Resim önizlemesi..."> --> 
+     <!-- <img src="/Resimlerim/bitcoincash.jpg"> -->
+    <!-- <div id="myTabUrun"></div> -->
+  <!-- <div id="myTabUrun2"></div> -->
+  <section  id="myTabUrun2" class="container content-section"  ></section>
+  <section class="container content-section">
+      <h2 class="section-header">SEPET</h2>
+      <div class="cart-row">
+          <span class="cart-item cart-header cart-column">URUN</span>
+          <span class="cart-price cart-header cart-column">FİYAT</span>
+          <span class="cart-quantity cart-header cart-column">MİKTAR</span>
+      </div>
+      <div class="cart-items">
+      </div>
+      <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">SATIN AL</button>
+  </section>
+    <!-- <h1 class="" id="">SEPET</h1> -->
+    <!-- <div id="myTabSepet"></div> -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="urunler.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

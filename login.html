@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">    
+    <!-- <script src="sqldb.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <body class="bodyindex" background="">
+      <div class="container h-100">
+          <div class="d-flex justify-content-center h-100">
+              <div class="user_card">
+                  <div class="d-flex justify-content-center">
+                      <div class="brand_logo_container" >
+                          <img src="data:image/png;base64,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" class="brand_logo" alt="Logo">
+                      </div>
+                  </div>
+                  <div class="d-flex justify-content-center form_container">
+                      <form>
+                          <div class="input-group mb-3">
+                              <div class="input-group-append">
+                                  <span class="input-group-text"><i class="fas fa-user"></i></span>
+                              </div>
+                              <input id="UserGiris" type="text" name="" class="form-control input_user" value="" placeholder="username">
+                          </div>
+                          <div class="input-group mb-2">
+                              <div class="input-group-append">
+                                  <span class="input-group-text"><i class="fas fa-key"></i></span>
+                              </div>
+                              <input id="PasswordGiris" type="password" name="" class="form-control input_pass" value="" placeholder="password">
+                          </div>
+                          <div class="form-group">
+                              <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                  <label class="custom-control-label" for="customControlInline"> Remember me</label>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                  <div id="login" class="d-flex justify-content-center mt-3 login_container">
+                      <button id="login_btn" type="button" name="button" class="btn login_btn">Login</button>
+                  </div>
+                  <div class="mt-4">
+                      <div class="d-flex justify-content-center links">
+                          Don't have an account <!-- Link to open the modal -->
+                          <p><a href="#ex1" id="SignUp" rel="modal:open"> Sign Up</a></p>
+                      </div>
+                      <div class="d-flex justify-content-center links">
+                          <a href="#">Forgot your password?</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>    
+      <div id="ex1" class="modal">
+          <form id="form1">
+              <p>Lütfen Gerekli Alanları Doldurunuz.</p>
+              <input id="GercekAd" type="text" name="" class="form-control input_user" value="" placeholder="name">
+              <br>
+              <input id="KulAdi" type="text" name="" class="form-control input_user" value="" placeholder="username">
+              <br>
+              <div id="error"></div>
+              <input id="KullMail" type="text" name="" class="form-control input_user" value="" placeholder="Email">
+              <br>
+              <input id="SifreKayit" type="text" name="" class="form-control input_user" value="" placeholder="password">
+              <br>
+              <input id="reSifreKayit" type="text" name="" class="form-control input_user" value="" placeholder="retype password">
+
+              <a href="#" rel="modal:close">Close</a>
+              <button id="save_btn" type="button" name="" class="" value="" >Kaydet</button>
+          </form>
+      </div>
+    <script src="loginelement.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
